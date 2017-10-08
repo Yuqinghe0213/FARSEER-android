@@ -47,7 +47,7 @@ def login(User_Email: hug.types.text, User_PSW: hug.types.text):
                 # print(json_obj1)
                 return json_obj1
         else:
-                cursor.execute("select * from [dbo].[User] where contact_email= ? and login_password=?", (contactEmail,loginPassword))
+                cursor.execute("select * from [dbo].[User] where UserEmail= ? and UserPSW=?", (User_Email,User_PSW))
                 if cursor.rowcount == 0:
                         # print(json_obj2)
                         return json_obj2
@@ -93,7 +93,6 @@ def getUser(User_Email: hug.types.text):
 #             return json_obj
 
 
-if __name__ == '__main__':
-        getUser('karen@gmail.com')
-        register('lynn', '123456', '0478171327', 'lynn@gmail.com')
-
+# if __name__ == '__main__':
+#         getUser('karen@gmail.com')
+#         register('ching33333', '123456', '0478171327', 'ching33333@gmail.com')
