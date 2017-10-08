@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id = "@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tool:context="com.example.farseer.SignInActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_gradient" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayputInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/inputbackgound"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_mail"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/ic_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/password_text"
+                android:hint="Password"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/sign_in"
+            android:background="@drawable/buttombackground_sign_in"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Sign in"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/back"
+            android:background="@drawable/buttombackground_back"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Back"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/LayputInput"
+    android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/app_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="@drawable/farseer_white"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo_no"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+</LinearLayout>
+</RelativeLayout>

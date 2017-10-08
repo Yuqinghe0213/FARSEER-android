@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#0000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habitation"
+            android:textColor="#a2a1b8"
+            android:maxLength="12"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"/>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/habittitle"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#1b193b"
+            android:textColor="#181737"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dad8d8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrption"
+            android:textColor="#a2a1b8"
+            android:maxLength="12"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/habitdescription"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#1b193b"
+            android:textColor="#181737"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dad8d8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:textColor="#a2a1b8"
+            android:maxLength="12"
+            android:background="#0000"
+            android:padding="16dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0000"/>
+
+</LinearLayout>
+
