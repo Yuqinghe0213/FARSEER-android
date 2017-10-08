@@ -1,0 +1,64 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/B_menu"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/location"
+            android:layout_alignParentStart="true"
+            android:onClick="onMenuClick"
+            android:background="@drawable/barbutton"
+            android:layout_marginTop="8dp"
+            />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/B_menu"
+            android:background="@drawable/serarchbg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/B_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="onSearchClick"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/location"
+            android:background="@drawable/searchbt"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.yuqing.mymap.MapsActivity"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"/>
+
+</RelativeLayout>

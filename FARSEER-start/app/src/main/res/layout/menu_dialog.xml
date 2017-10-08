@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" android:background="@drawable/info_background">
+
+    <Button
+        android:id="@+id/B_creatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creature View"
+        android:background="@drawable/buttonbg"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/B_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report View"
+        android:background="@drawable/buttonbg"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/B_safety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Safe areas"
+        android:background="@drawable/buttonbg"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/B_reportCreature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Report"
+        android:background="@drawable/buttonbg"
+        android:textColor="#FFF"
+        android:textStyle="bold"/>
+</LinearLayout>
